@@ -1,0 +1,17 @@
+format_version: 3
+pipelines:
+  simple-go-server-release:
+    group: defaultGroup
+    label_template: ${COUNT}
+    lock_behavior: none
+    display_order: -1
+    materials:
+      git:
+        git: https://github.com/shakirshakiel/simple-go-server.git
+        shallow_clone: false
+        auto_update: true
+        branch: release-1.0
+    parameters:
+      BRANCH: master
+      VERSION: '1.0'
+    template: simple-go-server-1.0

@@ -12,6 +12,6 @@ pipelines:
         auto_update: true
         branch: release-1.0
     parameters:
-      BRANCH: master
+      BRANCH: release
       VERSION: '1.0'
     template: simple-go-server-1.0

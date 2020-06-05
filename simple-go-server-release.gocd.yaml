@@ -12,8 +12,9 @@ pipelines:
         auto_update: true
         branch: release-1.2
     parameters:
-      BRANCH: master
-      VERSION: '1.0'
+      BRANCH: master-changed
+      VERSION: '2.0'
     secure_variables:
       SECURE: 'AES:cJAltB5T1RwtyB/hqnZbLA==:8Tlb4ySNTQUZWVhEXJxKzA=='
+      SECURE1: 'AES:hK2XdXAShfW8vXeuI97bdA==:cOXCX0aTbg5KdhMl3w3+/g=='
     template: simple-go-server-1.2
